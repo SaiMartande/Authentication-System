@@ -37,30 +37,7 @@
 
 ---
 
-## 📂 Project Structure
-
-authentify-backend/
-│
-├── src/main/java/com/example/authentify
-│ ├── controller/
-│ ├── service/
-│ ├── repository/
-│ ├── entity/
-│ ├── security/
-│ └── dto/
-│
-└── src/main/resources/
-└── application.properties
-
-authentify-frontend/
-├── src/
-│ ├── pages/
-│ ├── components/
-│ ├── context/
-│ ├── styles/
-│ └── App.jsx
-└── public/
-
+<pre lang="markdown"> ## 📂 Project Structure ``` authentify-backend/ │ ├── src/main/java/com/example/authentify │ ├── controller/ # REST API controllers │ ├── service/ # Business logic and service classes │ ├── repository/ # Spring Data JPA repositories │ ├── entity/ # JPA entities │ ├── security/ # Spring Security configuration and JWT │ └── dto/ # Data Transfer Objects │ └── src/main/resources/ └── application.properties authentify-frontend/ ├── src/ │ ├── pages/ # Page components (Login, Register, Dashboard, etc.) │ ├── components/ # Reusable UI components │ ├── context/ # Context for Auth and State Management │ ├── styles/ # External CSS files │ └── App.jsx # Root component └── public/ # Static files (index.html, favicon, etc.) ``` </pre>
 ---
 
 ## 🚀 Getting Started

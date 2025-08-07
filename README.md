@@ -1,39 +1,39 @@
 # 🔐 Authentify — Secure Authentication System (Spring Boot + React)
 
-Authentify is a modern full-stack authentication system built using **Spring Boot** for the backend and **React** for the frontend. It includes secure user registration, login with JWT, email-based OTP verification, and password reset functionality. The UI is styled using **Bootstrap 5** for a clean and responsive experience.
+**Authentify** is a modern full-stack authentication system built using **Spring Boot** for the backend and **React** for the frontend. It includes secure user registration, login with JWT, email-based OTP verification, and password reset functionality. The UI is styled using **Bootstrap 5** for a clean and responsive experience.
 
 ---
 
 ## ✅ Features
 
-- ✅ **User Registration & Login** with secure password hashing
-- ✅ **JWT-Based Authentication** for stateless session handling
-- ✅ **Email OTP Verification** on account creation (JavaMailSender)
-- ✅ **Password Reset via Email OTP**
-- ✅ **React Frontend** with protected routes based on login state
-- ✅ **Bootstrap 5 UI** for sleek and responsive design
-- ✅ **Fully Commented Codebase** — Easy to understand and customize
-- ✅ **Modular REST API Design** using Spring Boot best practices
-- ✅ **Token Storage in LocalStorage** and auto-expiration handling
+- ✅ User Registration & Login with secure password hashing  
+- ✅ JWT-Based Authentication for stateless session handling  
+- ✅ Email OTP Verification on account creation (JavaMailSender)  
+- ✅ Password Reset via Email OTP  
+- ✅ React Frontend with protected routes based on login state  
+- ✅ Bootstrap 5 UI for sleek and responsive design  
+- ✅ Fully Commented Codebase — Easy to understand and customize  
+- ✅ Modular REST API Design using Spring Boot best practices  
+- ✅ Token Storage in LocalStorage and auto-expiration handling  
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend:**
+### Frontend
 - React (Vite)
 - Axios
 - React Router DOM
 - Bootstrap 5
 - React Toastify
 
-**Backend:**
+### Backend
 - Spring Boot (v3+)
 - Spring Security
 - Spring Data JPA
 - JavaMailSender
-- PostgreSQL (can be switched to H2/MySQL)
-- JWT for token-based auth
+- PostgreSQL *(can be switched to H2/MySQL)*
+- JWT for token-based authentication
 
 ---
 
@@ -50,7 +50,7 @@ authentify-backend/
 │ └── dto/
 │
 └── src/main/resources/
-├── application.properties
+└── application.properties
 
 authentify-frontend/
 ├── src/
@@ -71,67 +71,213 @@ Edit
 
 ### ⚙️ Backend Setup
 
-1. Clone the project:
-    ```bash
-    git clone https://github.com/your-username/authentify.git
-    cd authentify/authentify-backend
-    ```
+Clone the project:
 
-2. Configure PostgreSQL (or use H2 for dev) in `application.properties`.
+```bash
+git clone # 🔐 Authentify — Secure Authentication System (Spring Boot + React)
 
-3. Run the Spring Boot application:
-    ```bash
-    ./mvnw spring-boot:run
-    ```
-
-### 💻 Frontend Setup
-
-1. Navigate to frontend directory:
-    ```bash
-    cd authentify-frontend
-    ```
-
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
-
-3. Start the frontend:
-    ```bash
-    npm run dev
-    ```
+**Authentify** is a modern full-stack authentication system built using **Spring Boot** for the backend and **React** for the frontend. It includes secure user registration, login with JWT, email-based OTP verification, and password reset functionality. The UI is styled using **Bootstrap 5** for a clean and responsive experience.
 
 ---
 
-## 🔐 Authentication Flow
+## ✅ Features
 
-1. **Register User** → Sends OTP to email
-2. **Verify Email with OTP**
-3. **Login with Credentials** → JWT stored in browser
-4. **Access Protected Routes (Dashboard)**
-5. **Forgot Password?** → Send OTP → Verify → Set New Password
-
----
-
-## 📸 Screenshots
-
-> _You can add screenshots here of:_
-- Register page
-- OTP verification UI
-- Login page
-- Protected Dashboard
-- Forgot password flow
+- ✅ User Registration & Login with secure password hashing  
+- ✅ JWT-Based Authentication for stateless session handling  
+- ✅ Email OTP Verification on account creation (JavaMailSender)  
+- ✅ Password Reset via Email OTP  
+- ✅ React Frontend with protected routes based on login state  
+- ✅ Bootstrap 5 UI for sleek and responsive design  
+- ✅ Fully Commented Codebase — Easy to understand and customize  
+- ✅ Modular REST API Design using Spring Boot best practices  
+- ✅ Token Storage in LocalStorage and auto-expiration handling  
 
 ---
 
-## 📧 Email Configuration (SMTP)
+## 🛠️ Tech Stack
 
-Add the following in your `application.properties`:
+### Frontend
+- React (Vite)
+- Axios
+- React Router DOM
+- Bootstrap 5
+- React Toastify
 
-```properties
+### Backend
+- Spring Boot (v3+)
+- Spring Security
+- Spring Data JPA
+- JavaMailSender
+- PostgreSQL *(can be switched to H2/MySQL)*
+- JWT for token-based authentication
+
+---
+
+## 📂 Project Structure
+
+authentify-backend/
+│
+├── src/main/java/com/example/authentify
+│ ├── controller/
+│ ├── service/
+│ ├── repository/
+│ ├── entity/
+│ ├── security/
+│ └── dto/
+│
+└── src/main/resources/
+└── application.properties
+
+authentify-frontend/
+├── src/
+│ ├── pages/
+│ ├── components/
+│ ├── context/
+│ ├── styles/
+│ └── App.jsx
+└── public/
+
+yaml
+Copy
+Edit
+
+---
+
+## 🚀 Getting Started
+
+### ⚙️ Backend Setup
+
+Clone the project:
+
+```bash
+git clone https://github.com/your-username/authentify.git
+cd authentify/authentify-backend
+Configure PostgreSQL (or H2 for development) in application.properties.
+
+Run the Spring Boot application:
+
+bash
+Copy
+Edit
+./mvnw spring-boot:run
+💻 Frontend Setup
+Navigate to the frontend directory:
+
+bash
+Copy
+Edit
+cd authentify-frontend
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Start the React development server:
+
+bash
+Copy
+Edit
+npm run dev
+🔐 Authentication Flow
+Register User → Sends OTP to email
+
+Verify Email with OTP
+
+Login with credentials → JWT stored in browser
+
+Access Protected Routes (Dashboard, etc.)
+
+Forgot Password? → Send OTP → Verify → Set New Password
+
+📸 Screenshots
+Add screenshots of the following pages:
+
+Register Page
+
+OTP Verification UI
+
+Login Page
+
+Protected Dashboard
+
+Forgot Password Flow
+
+📧 Email Configuration (SMTP)
+Configure the following properties in application.properties:
+
+properties
+Copy
+Edit
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username=your_email@gmail.com
 spring.mail.password=your_app_password
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
+💡 Note: Use App Passwords for Gmail if 2FA is enabled.
+cd authentify/authentify-backend
+Configure PostgreSQL (or H2 for development) in application.properties.
+
+Run the Spring Boot application:
+
+bash
+Copy
+Edit
+./mvnw spring-boot:run
+💻 Frontend Setup
+Navigate to the frontend directory:
+
+bash
+Copy
+Edit
+cd authentify-frontend
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Start the React development server:
+
+bash
+Copy
+Edit
+npm run dev
+🔐 Authentication Flow
+Register User → Sends OTP to email
+
+Verify Email with OTP
+
+Login with credentials → JWT stored in browser
+
+Access Protected Routes (Dashboard, etc.)
+
+Forgot Password? → Send OTP → Verify → Set New Password
+
+📸 Screenshots
+Add screenshots of the following pages:
+
+Register Page
+
+OTP Verification UI
+
+Login Page
+
+Protected Dashboard
+
+Forgot Password Flow
+
+📧 Email Configuration (SMTP)
+Configure the following properties in application.properties:
+
+properties
+Copy
+Edit
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=your_email@gmail.com
+spring.mail.password=your_app_password
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+💡 Note: Use App Passwords for Gmail if 2FA is enabled.

@@ -1,0 +1,24 @@
+/* styles.css */
+.btn-custom {
+  background-color: #644da8;
+  border-color: #644da8;
+  color: #fff;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.show > .btn-custom.dropdown-toggle {
+  background-color: #8169c7;
+  border-color: #8169c7;
+  color: #fff;
+}
+
+.btn-custom:disabled,
+.btn-custom.disabled {
+  background-color: #644da8;
+  border-color: #644da8;
+  color: #fff;
+  opacity: 0.65;
+}
